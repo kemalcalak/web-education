@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #mevsimler,th,td,tr{
+        border: solid 2px silver;
+        
+      }
+      tr,td{
+        border: 1px solid black;
+      }
+      
+      th {
+        background-color: black;
+        color: #fff;
+      }
+      td:nth-child(1) {
+        background-color: blue;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <map name="ornek">
+      <area shape="rect" coords="0,0,50,50" href="htpps:\\ktu.edu.tr" alt="ktu">
+      <area shape="circle" coords="290,90,60" href="htpps:\\ktu.edu.tr" alt="ktu">
+    </map>
+    <img src="htthtpps:\\ktu.edu.tr/dosyalar/kimlik_71a52.jpg" alt="" usemap="#ornek">
+    <br>
+    <a href="https://www.ktu.edu.tr/" target="_blank">Tıkla</a><br>
+    <audio src="" controls>
+      <source src="test.mp3" type="audio/mpeg" />
+    </audio>
+    <audio loop controls>
+      <source src="test.mp3" type="audio/mpeg" />
+    </audio>
+    <br>
+    <table id="mevsimler" cellspacing="5px">
+      <thead>
+        <th>Mevsimler</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kış</td>
+          <td>Aralık</td>
+          <td>Ocak</td>
+          <td>Şubat</td>
+        </tr>
+        <tr>
+          <td>İlkbahar</td>
+          <td>Mart</td>
+          <td>Nisan</td>
+          <td>Mayıs</td>
+        </tr>
+        <tr>
+          <td>Yaz</td>
+          <td>Haziran</td>
+          <td>Temmuz</td>
+          <td>Ağustos</td>
+        </tr>
+        <tr>
+          <td>Sonbahar</td>
+          <td>Eylül</td>
+          <td>Ekim</td>
+          <td>Kasım</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td colspan="3">Ali Kemal Çalak</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
