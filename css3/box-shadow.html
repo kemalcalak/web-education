@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="buttons.css">
     <style>
       
         * {
@@ -76,20 +76,6 @@
             color: #fff;
         }
 
-        .main-nav__item--login a {
-            color: #fff;
-            background-color: #2E4C6D;
-            padding: 4px 16px;
-            border-radius: 8px;
-            border: 2px solid #fff;
-        }
-
-        .main-nav__item--login a:hover {
-            color: #2E4C6D;
-            border: 2px solid #2E4C6D;
-            background-color: #fff;
-        }
-
         .main-nav__item--login::before {
             content:none;
         }
@@ -147,25 +133,6 @@
             font-size: 30px;
         }
 
-        #features a {
-            background-color: #FC997C;
-            color: #fff;
-            padding: 7px 15px;
-            text-decoration: none;
-            font-size: 14px;
-            text-align: center;
-            border: 1px solid #FC997C;
-            border-radius: 3px;
-            display: inline-block;
-            margin-top: 15px;
-        }
-
-        #features a:hover {
-            border: 1px solid #FC997C;
-            color: #FC997C;
-            background-color: #fff;
-        }
-
         .section-title {
             text-align: center;
         }
@@ -193,6 +160,12 @@
             background: #edf5f7;
             padding: 25px 10px;
             border-radius: 5px;
+            box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+            transition: box-shadow .6s;
+        }
+
+        .inner-plan:hover {
+            box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
         }
 
         .plan__features {
@@ -231,7 +204,7 @@
                     <a href="#">Diziler</a>
                 </li>
                 <li class="main-nav__item main-nav__item--login">
-                    <a href="#">Login</a>
+                    <a class="btn btn-secondary" href="#">Login</a>
                 </li>
             </ul>
         </nav>
@@ -271,7 +244,7 @@
                 <div class="col-2 features__left"></div><div class="col-2 features__right">
                     <h3>Watch all Movies & TV Shows once they get released!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam deserunt quaerat? Doloremque expedita repellendus adipisci eligendi nobis illum! Perferendis ab blanditiis eius iste incidunt esse numquam asperiores hic suscipit.</p>
-                    <a href="#">View Features</a>
+                    <a class="btn btn-secondary" href="#">View Features</a>
                 </div>
             </div>
         </section>
@@ -292,7 +265,7 @@
                                 <li>First Month Free</li>
                             </ul>
                             <div>
-                                <button>Choose Plan</button>
+                                <button class="btn btn-primary">Choose Plan</button>
                             </div>
                         </div>
                     </div>
@@ -310,7 +283,7 @@
                                 <li>First Month Free</li>
                             </ul>
                             <div>
-                                <button>Choose Plan</button>
+                                <button class="btn btn-primary">Choose Plan</button>
                             </div>
                         </div>
                     </div>
@@ -327,7 +300,7 @@
                                 <li>First Month Free</li>
                             </ul>
                             <div>
-                                <button>Choose Plan</button>
+                                <button class="btn btn-primary">Choose Plan</button>
                             </div>
                         </div>
                     </div>
