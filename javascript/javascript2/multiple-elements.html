@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=6MqJUOGFxiSpOjb2xrta7tdPoWuC8FkfgllFCmknaoaSws-TV3-AsiWOKgdSuBWH2PkxselyAGTs9pP7vHkug1N-Az2l_ci6hm8qV05b0Xl8uMA39v-xeM3JU6Z8vlcwwF6hfJNVQBFzJ9X5RBr3xEf0j9rnBLhg5M68-CfMpkBN65yTCj9lG6QE7lfQx7NZJLRjx-qGjNoHHXrCTOm4BvI7cUqWo0Zgbc8wlRpWkbfWdDvpzFKtCnxeC_9KAU_jQz9LKW6b2YNDCyQNJ1B-OyfgvajoaH3IMCPLtOnrgeZdOXhKy8GnbAkbj3PHflZ34nP1fvR1sVpByPy0yjHXsbDk1F1m1ERBHdV8-T1sMPAa7cJCNGnBs9bd4hycZwj3goF5SY6VfeblKL36Tbd2-Hi98Hz--Ddn6ep7IJVabOyhE2Tn95VacX5ge8b2kwAfE9VZYbC8eEq8PmLs8dsj5hSjkyBZvil9xxdPWyrGljdsUj8F9rhgIDHjpWcQH7n32oHnvU7SoJu8ZoJ9TNwO7_suDeK3VsjMdZc-XCTIH7NHRQkxQfaW4yERt1g6L_dHx_MwJumO3EBmZjwlaAoRK3-LFF9W4YqMqZds5JFiggYC7UZT7kBohD5kPiMUelCtOGCHsojOTdoh-W43vqNxQrwQhBl-u9RcM7by4wmYYVpxCixW2AgBJqpcK-jyutuZrrjoSlSQ_GTcP6b7fQ3x-roHQPi6iSF5l5elEtnELP4GSiZvmTSWOoy5EyIFinCz7xWQpw8xfBmpq0IkGAbnHtfPWSnut-bSqxi0Xcumv1k" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAyMi0wNC0yN18wOC00Ny01NS05YzEwOGIzZjU3MzlmMDE3YzMyMmYwMjRjNDgzMDgzOC9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkbXVsdGlwbGUtZWxlbWVudHMuaHRtbCZFeHBpcmVzPTE2ODIwMDc4MjMmU2lnbmF0dXJlPUNFWWhYeFVlRUY5LUpTZWY5VFI1VGp-UXJwQzlNUFdFQzlvZldibWNLNFJ3dUJBZ29UYVlQcEhQVEdocWh5NFg4bUVGLWF3UlZZTEQ1LWFQNWc0LXByRXdRZk44RUhibERIZkNpZXlBc2JqampFYkFnS2FMYWlIZGRFTmpMSGlmN05CRUxEd29OWmM3NGdGLVotSzduc1YzTUl-ZzlZMjlEZUVoaGkyUGtqbzZEN2swY0RJbk41R2hNaXZyNFYwTFdsaGI1cVpJdVJVRGdrWnE0alIycUMyTVFKYncxUGhmOTI3djRiVGRjYlJTNFNKeGNBZ1FHLWM1NVZCRzdzZnJneGQwOX5uTFlNbFhqUUk0cWhsNUVSUjJMNTRlSnpWbnNrU1E2Z1FFSDJGc0Flc1FDRVpPUHpvTUNiQ0xzQ1BvfkJIbkxmUkptT0t5akhUMFZ-ZG9qQV9fJktleS1QYWlyLUlkPUFQS0FJVEpWNzdXUzVaVDcyNjJB"/></head>
+<body>
+    
+
+    <div class="card-header">
+        <h3 class="cart-title h1" id="title">Todo App 2</h3>
+    </div>
+
+    <ul id="task-list">
+        <li class="task">Görev 1</li>
+        <li class="task">Görev 2</li>
+        <li class="task">Görev 3</li>
+    </ul>
+
+    <ul id="task-list2">
+        <li class="task">Görev 1</li>
+        <li class="task">Görev 2</li>
+        <li class="task">Görev 3</li>
+    </ul>
+
+    <script>
+        let sonuc;
+
+        sonuc = document.getElementsByClassName("task")[0]; 
+        sonuc = document.getElementsByClassName("task")[1]; 
+
+        // taskList = document.getElementsByClassName("task"); 
+        // ul = document.getElementById("task-list");
+        // taskList = ul.getElementsByTagName("li");
+
+        taskList = document.querySelectorAll("#task-list li");
+
+        // for(let i=0; i<taskList.length;i++) {
+        //     console.log(taskList[i]);
+        // }
+
+        for(let task of taskList) {
+            task.style.color="red";
+            task.style.fontSize = "20px";
+            // task.innerText = "Item"
+        }
+
+        // console.log(sonuc);
+    </script>
+
+</body>
+</html>

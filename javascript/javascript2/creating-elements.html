@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=qMWlNNn6ks7DVKEVW5misyErWbc4lfEAvxKqp7Cm9i3oScMPEmDhJ6Sz3W-JZOm5kAUgAdEfMsCZH_7-kordC6GZfJke2gTbm7K5oUkr-v6zImpBRcGg0TOJxlNCv3ZjO9esqvs3Vhd38Jau-Z_s8cWMoVG-H1vXiN-N1ZK1kEmrSaT2YPlBGtH_TYkSE2uWmpzudXXEAh7JKCTa85X4hRFi1HPvUzGHj6_KlG8YoNtAlnrMOrz8G7vjJbrZBHNt0y87jve92teIKBLbjG1lE9R83xnSCoEp9POEw5pZL1CutbRWkHSM36-jY_RjyLBxYqViCPpJcHeNvgOjMDgLzMBeVieHQHnCtbsx7_EYZ4WCBNyrE-U98WC1r_ZhD9vtXh6IyhTsl5wc_lI_pnm3PXD_G82AcgeETQGuEZRY6g48dwFtp0BsFyp5xdUHsTJQV-CgD8-XDaCGjalScIqv_ZKA6I2lLP_0DpOBConQkBEbKZTNZiov-av6QrfFJzNvSCn_bvbi_2q2jdJzEQ5fgi06Ljf4d85gMX4W9Wy96rk8KS_8-a2YCXB7iKIyvHNMOAYAVn6clATVSHe2Tar43G_aVKpRnBwdEpLcWeyvZhtvxoRjDiJJHp6KsSOSa1bgcTIJVwqc3na8ZLKlFHbJFj_He7j63XKW_KAFF_SClvcAkriltOn3l7g8Ag6Bjq1_e_ySFTS2r_UZUz_6i5S7moCdFcU6gXAiU2Nzj-d90aF5ODsNM20s1__1w-AgWoa7kWYs4QnScxWlt4pwflS5M_clVnQ2jq94xelhMjEqp4o" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAyMi0wNC0yN18wOS0zNC01Ny01MDM0ZTY5MjNjOTcwYjhhMGU0MWI0Y2E4Y2E2MDE5Yy9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkY3JlYXRpbmctZWxlbWVudHMuaHRtbCZFeHBpcmVzPTE2ODIwMDc2MzgmU2lnbmF0dXJlPWNPa0dsdDdMTjRnb1FucmhnR0pCcExEfk5yWDBOcXJNczNoc21jZ2djQnVhUGZRVkVTZXFjc25xQXBwTTEtbThMYlFYN3lFZHpMVTV2LWp5b2ZtaFQ2bmhBR0F5Q0ViRjJDcXU4b25Qd1JxOTgtOGhHYlZiWHdHUWFwVDZDak4xRUJRLTVHU0dLNTd6VUhYY0dCb3pOM0Y0SFRwfjY3MVpDbHNidmJLVmJFOWlNUFB-S3haYVpRR0VpemJZanRCSm85fnNZYVBMWTBGd25LeTlpcjVBT3VITEhnd35wSWFLbGU1UmlQT1hIZFNEbjV1Q2FYOEVjS0x1U1BHNE96UHBIWmtMOFlxVy1OS0FjLUg5bVNwTDc3Y2d-VzluQzIzWkwwb0VrMzlVbGs2WHJ5Z3l5VEJYM0tUeVFhTmFuekl2cHhITjBORUk5OUczN2NRQVd0MGhXQV9fJktleS1QYWlyLUlkPUFQS0FJVEpWNzdXUzVaVDcyNjJB"/></head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        Todo App 
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <ul id="task-list" class="list-group list-group-flush">
+
+                        <!-- <li class="task list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" id="1" class="form-check-input">
+                                <label for="1" class="form-check-label">Görev 1</label>
+                            </div>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+   
+
+    <script>
+
+        "use strict";
+        
+        let sonuc;
+        
+
+        let gorevListesi = [
+            {"id": 1, "gorevAdi": "Görev 1"},
+            {"id": 2, "gorevAdi": "Görev 2"},
+            {"id": 3, "gorevAdi": "Görev 3"},
+            {"id": 4, "gorevAdi": "Görev 4"},
+        ];
+
+        let ul = document.getElementById("task-list");
+
+        // let count = ul.children.length;
+
+        for(let gorev of gorevListesi) {
+
+            let li = `
+                <li class="task list-group-item">
+                    <div class="form-check">
+                        <input type="checkbox" id="${gorev.id}" class="form-check-input">
+                        <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+                    </div>
+                </li>
+            `;
+            
+            ul.insertAdjacentHTML("beforeend", li);            
+
+        }
+
+      
+    </script>
+
+</body>
+</html>
